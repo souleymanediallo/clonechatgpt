@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Clone ChatGPT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/style.css') }}">
 </head>
 <body>
@@ -11,6 +12,8 @@
     {% block content %}
     {% endblock %}
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
     <script src="{{ url_for('static', filename='dist/js/script.js') }}"></script>
 </body>
 </html>
