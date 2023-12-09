@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<main class="mx-auto max-w-6xl px-4 py-10 flex flex-col">
+    <div id="gpt-output"></div>
+    <h1 class="text-3xl font-bold mb-4">Chatbot AI Assistant</h1>
+    <p class="mb-4">Ce projet est un clone de ChatGPT, développé en utilisant l'API OpenAI et
+        intégré dans une application web Flask.</p>
+    <h2 class="text-xl font-bold mb-4">Objectif</h2>
+    <p class="mb-4">L'objectif est de fournir une expérience interactive de chatbot, similaire à ChatGPT,
+        pour aider les utilisateurs à  obtenir des réponses à leurs questions, à explorer des sujets ou à obtenir de
+        l'aide sur divers sujets.</p>
+    <h2 class="text-xl font-bold mb-4">Fonctionnalités</h2>
+    <p class="mb-4">Le bot peut répondre à des questions, générer du texte créatif, aider à la programmation,
+        et plus encore.</p>
+    <h2 class="text-xl font-bold mb-4">Technologies Utilisées</h2>
+    <ul class="list-disc list-inside mb-4">
+        <li>Flask</li>
+        <li>OpenAI API</li>
+        <li>Python</li>
+        <li>TailwindCSS</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <h2 class="text-xl font-bold mb-4">Comment ça fonctionne ?</h2>
+    <p class="mb-4">Les utilisateurs entrent leurs questions via l'interface web. Le front-end gère l'envoi des requêtes,
+        la réception des réponses de l'API GPT, et la mise à jour de l'interface utilisateur en conséquence.
+        Ces requêtes sont envoyées au backend Flask, qui les transmet à l'API OpenAI. Les réponses générées sont
+        ensuite renvoyées à l'utilisateur via l'interface web.</p>
+</main>
+{% endblock %}

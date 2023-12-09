@@ -16,6 +16,11 @@ def home():
     return render_template('pages/index.html')
 
 
+@app.route('/projet')
+def projet():
+    return render_template('pages/projet.html')
+
+
 @app.route('/prompt', methods=['POST'])
 def prompt():
     messages = request.json['messages']
